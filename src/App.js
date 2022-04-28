@@ -34,6 +34,11 @@ function App() {
     }
   }, [newUser, users])
 
+  const filterUser = (id) => {
+    const newArr = users.filter((user) => id !== user.id)
+    return newArr
+  }
+
   useEffect(() => {
     if(deleteId) {
       deleteUser(deleteId)
@@ -43,10 +48,7 @@ function App() {
     }
   }, [deleteId, filterUser])
 
-  const filterUser = (id) => {
-    const newArr = users.filter((user) => id !== user.id)
-    return newArr
-  }
+  
 
   const handlerOnCreateUser = (e) => {
     setNewUser(e)
