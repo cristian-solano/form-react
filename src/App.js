@@ -41,7 +41,7 @@ function App() {
         setUsers(filterUser(deleteId))
       })
     }
-  }, [deleteId])
+  }, [deleteId, filterUser])
 
   const filterUser = (id) => {
     const newArr = users.filter((user) => id !== user.id)
