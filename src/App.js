@@ -34,21 +34,24 @@ function App() {
     }
   }, [newUser, users])
 
-  const filterUser = (id) => {
-    const newArr = users.filter((user) => id !== user.id)
-    return newArr
-  }
+ 
 
   useEffect(() => {
+    const filterUser = (id) => {
+      const newArr = users.filter((user) => id !== user.id)
+      return newArr
+    }
+  
     if(deleteId) {
       deleteUser(deleteId)
       .then(() => {
         setUsers(filterUser(deleteId))
+        setDeleteId('')
       })
     }
-  }, [deleteId, filterUser])
+  }, [deleteId, users ])
 
-  
+ 
 
   const handlerOnCreateUser = (e) => {
     setNewUser(e)
