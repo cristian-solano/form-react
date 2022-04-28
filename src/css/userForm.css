@@ -1,0 +1,110 @@
+.user-form{
+    width: 100%;
+    background: #fff;
+    padding: 15px 0 35px;
+    border-radius: 0 0 30px 30px;
+}
+
+.user-form form{
+    padding: 15px;
+    margin: 0 auto;
+}
+
+.user-form {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.user-form .allName{
+    width: 90%;
+}
+
+.user-form .allName input{
+    margin: 10px 10px 0 0;
+    width: 100%;
+    outline: none;
+}
+
+.user-form .input{
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.user-form .input input, .user-form .input select{
+    background: rgba(0, 0, 0, .03);
+    border: none;
+    font-size: 16px;
+    border-radius: 10px;
+    padding: 10px;
+    width: 90%;
+    outline: none;
+}
+
+.user-form .input label{
+    padding-right: 10px;
+    width: 10%;
+    text-align: center;
+}
+
+.user-form .input label i{
+    font-size: 20px;
+}
+
+.buttons-container{
+    width: 100%;
+    display: flex;
+}
+
+.user-form .submit-button{
+    margin-top: 15px;
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    background: #5fbab0;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+}
+
+
+
+.add-phone-button{
+    border: none;
+    background: #5CBAB3;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: 10px 0 20px;
+}
+
+.delete-phone-button{
+    color: #9733EE;
+    background: transparent;
+}
+
+@media (min-width: 576px) {
+    .user-form .allName{
+        display: flex;
+    }
+    .user-form form{
+        max-width: 579px;
+    }
+}
+
+@media (min-width: 768px) {
+    .user-form form { max-width: 721px; }
+}
+
+@media (min-width: 992px) {
+    .user-form{
+        border-radius: 0;
+        width: 40%;
+        height: 100vh;
+        overflow-x: auto;
+    }
+    .user-form form{
+        padding: 50px;
+    }
+}
